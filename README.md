@@ -1,6 +1,9 @@
 # Modifying-Active-Directory-with-Powershell
-In this lab we will modify active directory via powershell
+<h1>Summary</h1>
 
+In this lab we will modify Active Directory via Powershell. We will create a simple user as well as a user with other properties that is nested within different Organizational Units. We will also retrieve information about a user in Active Directory
+
+<h1>Step 1) Creating a User with no Paramaters in Active Directory</h1>
 Creating a user in Active Directory can also be done in A CLI 
 
 To do this you can type New-ADUser
@@ -23,7 +26,9 @@ Now we can check Active Directory to see if our newly created user is there
 
 We can see that we did create our new user but there is hardly any information
 
-Lets create a new user in powershell but this time we will add more information 
+Lets create a new user in Powershell but this time we will add more information 
+
+<h1>Step 2) Creating a User with several Parameters</h1>
 
 To do this we can use parameters. New-ADUser has many parameters but we will only use a few
 
@@ -38,6 +43,10 @@ Up above you can see we have created a user with the name Aaron a city of Orland
 You can see our user was created and the information we provided powershell was applied to the user
 
 There are many more parameters we could have used but those were just a few
+
+
+
+<h1>Step 3) Creating an Organizational Unit in Powershell</h1>
 
 Now let's create an Organizational Unit in Active Directory
 
@@ -65,6 +74,7 @@ The domain is represented by DC and we need to split it up into two pieces
 
 <img width="751" alt="Screenshot 2024-06-01 at 3 06 05 PM" src="https://github.com/Jtalbert15/Modifying-Active-Directory-with-Powershell/assets/66844406/5baeda09-398c-4372-bf0a-de32f8280d4a">
 
+<h1>Step 4) Retrieving Information about an AD User with Powershell</h1>
 I've created a user in this folder we have just created
 
 We can find out more information about this user using Get-ADUser
